@@ -53,13 +53,13 @@ while true; do
         1)
             echo ""
             echo -e "${Y}🔄 Running Dependency Installer...${N}"
-            curl -fsSL https://raw.githubusercontent.com/Sagargamin/INSTALLER-REPO/refs/heads/main/dependency.sh | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/dependency.sh | sed 's/\r$//' | bash
             pause
             ;;
         2)
             echo ""
             echo -e "${Y}🛠️  Running Bot Maker...${N}"
-            curl -fsSL https://raw.githubusercontent.com/Sagargamin/INSTALLER-REPO/refs/heads/main/bot_maker.sh | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/bot_maker.sh | sed 's/\r$//' | bash
             pause
             ;;
         3)
