@@ -71,7 +71,7 @@ while true; do
         4)
             echo ""
             echo -e "${Y}🚀 Bot Remover...${N}"
-            curl -fsSL https://raw.githubusercontent.com/Sagargamin/INSTALLER-REPO/refs/heads/main/bot_remover.sh | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/bot_remover.sh | sed 's/\r$//' | bash
             pause
             ;;
         5)
@@ -83,7 +83,7 @@ while true; do
         6)
             echo ""
             echo -e "${Y}🖥️  Installing RDP...${N}"
-            curl -fsSL https://raw.githubusercontent.com/vyn7rix/vm/main/rdp_installer.sh | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/rdp_installer.sh? | sed 's/\r$//' | bash
             pause
             ;;
         7)
