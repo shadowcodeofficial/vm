@@ -53,37 +53,37 @@ while true; do
         1)
             echo ""
             echo -e "${Y}🔄 Running Dependency Installer...${N}"
-            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/dependency.sh | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/dependency.sh?token=GHSAT0AAAAAADYS3UWNGXX2SAXCVGFZZS6M2OZZTZA | sed 's/\r$//' | bash
             pause
             ;;
         2)
             echo ""
             echo -e "${Y}🛠️  Running Bot Maker...${N}"
-            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/bot_maker.sh | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/bot_maker.sh?token=GHSAT0AAAAAADYS3UWMY4VF7QUQY4WZRJG42OZZS7A | sed 's/\r$//' | bash
             pause
             ;;
         3)
             echo ""
             echo -e "${Y}⚙️  Setting up Auto Restarter...${N}"
-            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/autorestarter.sh | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/autorestarter.sh?token=GHSAT0AAAAAADYS3UWNIETYJJ3YJJIZHJKI2OZZSAQ | sed 's/\r$//' | bash
             pause
             ;;
         4)
             echo ""
             echo -e "${Y}🚀 Bot Remover...${N}"
-            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/bot_remover.sh | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/bot_remover.sh?token=GHSAT0AAAAAADYS3UWN5WTOZAYK75TRH7B22OZZUPQ | sed 's/\r$//' | bash
             pause
             ;;
         5)
             echo ""
             echo -e "${Y}💻 Installing VM (IDX VPS)...${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/NotGamerPiie/idx-vps/main/vps.sh)
+            bash <(curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/vps123/refs/heads/main/vps.sh?token=GHSAT0AAAAAADYS3UWNKDF76G3RCWKSBOIS2OZZPWQ)
             pause
             ;;
         6)
             echo ""
             echo -e "${Y}🖥️  Installing RDP...${N}"
-            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/rdp_installer.sh? | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/rdp_installer.sh?token=GHSAT0AAAAAADYS3UWMJT56WD2SJK4PJTCU2OZZVHA? | sed 's/\r$//' | bash
             pause
             ;;
         7)
