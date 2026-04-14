@@ -77,7 +77,7 @@ while true; do
         5)
             echo ""
             echo -e "${Y}💻 Installing VM (IDX VPS)...${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/ultravps123/refs/heads/main/vps.sh)
+            bash <(curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/vm/refs/heads/main/vps.sh)
             pause
             ;;
         6)
