@@ -37,62 +37,48 @@ pause() {
 # --- MAIN LOOP ---
 while true; do
     header
-    echo -e "${C} 1) ${W}Dependency Installer ${G}(Node + Mineflayer)${N}"
-    echo -e "${C} 2) ${W}Bot Maker ${G}(Create app.js)${N}"
-    echo -e "${C} 3) ${W}Auto Restarter Setup ${G}(Systemd Service)${N}"
-    echo -e "${C} 4) ${W}Bot Remover ${G}(Manager)${N}"
-    echo -e "${C} 5) ${W}VM Installer ${G}(IDX VPS)${N}"
-    echo -e "${C} 6) ${W}RDP Installer ${G}(Desktop Environment)${N}"
-    echo -e "${C} 7) ${W}Tailscale Installer ${G}(VPN)${N}"
-    echo -e "${R} 8) Exit${N}"
+    echo -e "${C} 1) ${W}Bot Maker ${G}(Create app.js)${N}"
+    echo -e "${C} 2) ${W}Auto Restarter Setup ${G}(Systemd Service)${N}"
+    echo -e "${C} 3) ${W}Bot Remover ${G}(Manager)${N}"
+    echo -e "${C} 4) ${W}IDX VPS MAKER ${G}(IDX VPS)${N}"
+    echo -e "${C} 5) ${W}RDB VPS MAKER ${G}(Desktop Environment)${N}"
+    echo -e "${R} 0) Exit${N}"
     echo ""
     echo -e "${B}=====================================================${N}"
-    read -p "${Y}👉 Select an option [1-10]: ${N}" choice
+    read -p "${Y}👉 Select an option [1-5]: ${N}" choice
 
     case $choice in
         1)
-            echo ""
-            echo -e "${Y}🔄 Running Dependency Installer...${N}"
-            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/dependency.sh | sed 's/\r$//' | bash
-            pause
-            ;;
-        2)
             echo ""
             echo -e "${Y}🛠️  Running Bot Maker...${N}"
             curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/bot_maker.sh | sed 's/\r$//' | bash
             pause
             ;;
-        3)
+        2)
             echo ""
             echo -e "${Y}⚙️  Setting up AutoRestarter
             curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/autorestarter.sh | sed 's/\r$//' | bash
             pause
             ;;
-        4)
+        3)
             echo ""
             echo -e "${Y}🚀 Bot Remover...${N}"
             curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/bot_remover.sh | sed 's/\r$//' | bash
             pause
             ;;
-        5)
+        4)
             echo ""
             echo -e "${Y}💻 Installing VM (IDX VPS)...${N}"
             bash <(curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/vm/refs/heads/main/vps.sh)
             pause
             ;;
-        6)
+        5)
             echo ""
             echo -e "${Y}🖥️  Installing RDP...${N}"
             curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/rdp_installer.sh | sed 's/\r$//' | bash
             pause
             ;;
-        7)
-            echo ""
-            echo -e "${Y}🌐 Installing Tailscale VPN...${N}"
-            curl -fsSL https://tailscale.com/install.sh | sh
-            pause
-            ;;
-        8)
+        0)
             echo ""
             echo -e "${G}👋 Exiting... Thanks for using!${N}"
             exit 0
