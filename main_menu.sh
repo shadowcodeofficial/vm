@@ -37,15 +37,16 @@ pause() {
 # --- MAIN LOOP ---
 while true; do
     header
-    echo -e "${C} 1) ${W}Bot Maker ${G}(Create app.js)${N}"
-    echo -e "${C} 2) ${W}Auto Restarter Setup ${G}(Systemd Service)${N}"
-    echo -e "${C} 3) ${W}Bot Remover ${G}(Manager)${N}"
+    echo -e "${C} 1) ${W}BOT MAKER ${G}(Create app.js)${N}"
+    echo -e "${C} 2) ${W}AUTO RESTARTER SETUP ${G}(Systemd Service)${N}"
+    echo -e "${C} 3) ${W}BOT REMOVER ${G}(Manager)${N}"
     echo -e "${C} 4) ${W}IDX VPS MAKER ${G}(IDX VPS)${N}"
-    echo -e "${C} 5) ${W}RDB VPS MAKER ${G}(Desktop Environment)${N}"
+    echo -e "${C} 5) ${W}IDX TOOL SETUP ${G}(IDX TOOL SETUP)${N}"
+    echo -e "${C} 6) ${W}RDP SETUP ${G}(RDB setup)${N}"
     echo -e "${R} 0) Exit${N}"
     echo ""
     echo -e "${B}=====================================================${N}"
-    read -p "${Y}👉 Select an option [1-5]: ${N}" choice
+    read -p "${Y}👉 Select an option [1-6]: ${N}" choice
 
     case $choice in
         1)
@@ -69,10 +70,16 @@ while true; do
         4)
             echo ""
             echo -e "${Y}💻 Installing VM (IDX VPS)...${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/vm/refs/heads/main/vps.sh)
+            bash <(curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/vm/refs/heads/main/vps.sh) | sed 's/\r$//' | bash
             pause
             ;;
         5)
+            echo ""
+            echo -e "${Y}💻 IDX TOOL SETUP (IDX TOOL)...${N}"
+            curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/vps123/refs/heads/main/idx/dev.nix) | sed 's/\r$//' | bash
+            pause
+            ;;
+        6)
             echo ""
             echo -e "${Y}🖥️  Installing RDP...${N}"
             curl -fsSL https://raw.githubusercontent.com/shadowcodeofficial/Shadow/refs/heads/main/rdp_installer.sh | sed 's/\r$//' | bash
